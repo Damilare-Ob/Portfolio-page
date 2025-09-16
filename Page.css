@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'Clash Display'; /* give the font a name */
+  src: url('/Fonts/OTF/ClashDisplay-Medium.otf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+    color: #f6f6f6;
+    background-color: black;
+    font-family: Clash Display, sans-serif;
+    margin: 0px;
+    height: 500vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* header section */
+header {
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 23vh;
+}
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+.logo {
+    height: 50px;
+    padding: 30px 0px;
+    margin-right: 340px;
+    margin-left: 60px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+}
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 80px;
+    /*animate border later*/
+    border-bottom: 1px solid;
+}
+.navlinks a {
+    text-decoration: none;
+    color: #f6f6f6;
+    font-size: 16px;
+}
+.navlinks a:hover {
+    color: #5EEAD4; /* cyan color */
+}
+
+
+
+/* div class="stuffs" section */
+.stuffs {
+    display: flex;
+    height: 65vh;
+    margin-top: 12vh;
+}
+@media (min-width: 780px) {
+    .intro {
+    width: 55%;
+    padding: 10px  60px;}
+}
+  
+
+@media (max-width: 780px) {
+    .intro {
+    width:10vw;
+    }
+}
+
+.neon-text {
+  color:#5EEAD4; /* cyan color */
+  font-weight: bold;
+}
+ @media (max-width: 780px) {
+    .neon-text {
+  color:#5EEAD4; /* cyan color */
+  font-weight: bold;
+  font-size: 0.5em;
+  }
+}
+@media (min-width: 780px) {
+    .name {
+    font-size: 4.5em;
+    margin: 0px;
+  }
+}
+  @media (max-width: 780px) {
+    .name {
+    font-size: 1.5em;
+    margin: 0px;
+  }
+}
+.professions {
+    display: flex;
+    margin-top: 0px;
+    gap: 0px;
+    font-size: 1.56rem;
+}
+ @media (max-width: 780px) {
+    .professions {
+    display: flex;
+    margin-top: 0px;
+    gap: 0px;
+    font-size: 1.5em;
+}
+ }
+.professions p{
+    margin: 0px;
+}
+.nicedashdiv{ 
+    display: flex;
+    align-items: center;
+}
+.nicedash{
+    width: 50px;
+    height: 1px;
+    background-color: #5EEAD4;
+}
+.dev {
+    font-size: 25px;
+    margin: 0px 0px 0px 120px;
+}
+ @media (max-width: 780px) {
+        .dev {
+        font-size: 0.5em;
+       
+    }
+ }
+.description {
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 780px) {
+    .description {
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.5em;
+}
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 20px 0px;
+}
+.socials a {
+    color: #f6f6f6;
+    font-size: 20px;
+}
+.socials a:hover {
+    color: #5EEAD4;
+    transform: translateY(-4px);
+    transition: 0.2s;
+}
+
+button {
+    background-color: black;
+    color: #f6f6f6;
+    border: 2px solid rgba(255, 255, 255, 30%);
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+button:hover {
+    background-color: rgba(128, 128, 128, 20%);
+    transition: 0.2s;
+}
+
+/* New CSS for image section */
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 77vh;
+}
+
+
+
+
+
+
+/*End of div class="stuffs" section */
+/*End header section */
+
+
+/* about section */
+.about {
+    background-color:#f6f6f6;
+    color: rgb(11, 13, 16);
+    height: 90vh;
+    padding: 10vh;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+}
+
+.Skills {
+    background-color:#f6f6f6;
+    height: 90vh;
+}
+.skills-container {
+    background-color:black; 
+    height: 90vh;
+    padding: 10vh;
+}
+.wor {
+    text-align: center;
+    font-size: 6em;
+    margin-bottom: 30px;
+}
+.te {
+    font-size: 2em;
+}
+.res {
+    text-align: center;
+}
+.imgres {
+    width: 100%;
+    height: 500px;
+}
+.cssbr{
+    font-size:16px;
+}
+.scontainer {
+    display: inline-flex;
+    
+   background: linear-gradient(
+  140deg,
+  rgb(32, 32, 32) 0%,
+  rgb(32, 32, 32) 10%,
+  rgb(0, 0, 0) 20%,
+  rgb(0, 0, 0) 80%,
+  rgb(32, 32, 32) 90%,
+  rgb(32, 32, 32) 100%
+);
+    width: 45%;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 70%);
+    margin: 20px 0px;
+}
+.css{
+    font-size: 2em;
+    margin: 40px;
+    font-weight: bold;
+}
+.csslogo {
+    margin-left: 100px;
+}
+.otherskills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
