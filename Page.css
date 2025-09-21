@@ -2,7 +2,10 @@
   font-family: 'Clash Display'; /* give the font a name */
   src: url('/Fonts/OTF/ClashDisplay-Medium.otf') format('truetype');
 }
-
+::selection {
+  background:#5EEAD4;  /* orange highlight */
+  color: white;         /* white text */
+}
 html {
   scroll-behavior: smooth;
 }
