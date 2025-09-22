@@ -3,51 +3,54 @@
   src: url('/Fonts/OTF/ClashDisplay-Medium.otf') format('truetype');
 }
 ::selection {
-  background:#5EEAD4;  /* orange highlight */
-  color: white;         /* white text */
+  background:#f6f6f6; 
+  color: black;         
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-    color: #f6f6f6;
-    background-color: black;
-    font-family: Clash Display, sans-serif;
-    margin: 0px;
-    height: 500vh;
+  color: #f6f6f6;
+  background-color: black;
+  font-family: Clash Display, sans-serif;
+  margin: 0px;
+  height: 500vh;
 }
 * {
   margin: 0;
   padding: 0;
 }
+
 /* header section */
 header {
     height: 100vh;
+    width: 100%;
 }
+
+/* navigation bar section */
 .navbar {
     display: flex;
     align-items: center;
     height: 23vh;
 }
-@media (max-width: 768px) {
-    .navbar {
-        display: none;
-    }
-}
-
 .logo {
-    height: 50px;
     padding: 30px 0px;
     margin-right: 340px;
     margin-left: 60px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
 }
+.hamMenu{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: 60%;
+}
 .navlinks {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 600px;
+    width: 650px;
     height: 80px;
     /*animate border later*/
     border-bottom: 1px solid;
@@ -60,50 +63,31 @@ header {
 .navlinks a:hover {
     color: #5EEAD4; /* cyan color */
 }
-
-
+.hire{
+    background-color: black;
+    color: white;
+    border: 0.2px solid rgba(255, 255, 255, 40%);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.hire:hover {
+    background-color:rgba(255, 255, 255, 15%);
+    transition: 0.5s;
+}
 
 /* div class="stuffs" section */
 .stuffs {
     display: flex;
     height: 65vh;
     margin-top: 12vh;
+    margin-left: 60px;
 }
-@media (min-width: 780px) {
-    .intro {
-    width: 55%;
-    padding: 10px  60px;}
-}
-  
-
-@media (max-width: 780px) {
-    .intro {
-    width:10vw;
-    }
-}
-
 .neon-text {
   color:#5EEAD4; /* cyan color */
   font-weight: bold;
 }
- @media (max-width: 780px) {
-    .neon-text {
-  color:#5EEAD4; /* cyan color */
-  font-weight: bold;
-  font-size: 0.5em;
-  }
-}
-@media (min-width: 780px) {
-    .name {
-    font-size: 4.5em;
-    margin: 0px;
-  }
-}
-  @media (max-width: 780px) {
-    .name {
-    font-size: 1.5em;
-    margin: 0px;
-  }
+.name {
+    font-size: 3.5rem;
 }
 .professions {
     display: flex;
@@ -111,46 +95,17 @@ header {
     gap: 0px;
     font-size: 1.56rem;
 }
- @media (max-width: 780px) {
-    .professions {
-    display: flex;
-    margin-top: 0px;
-    gap: 0px;
-    font-size: 1.5em;
-}
- }
 .professions p{
     margin: 0px;
-}
-.nicedashdiv{ 
-    display: flex;
-    align-items: center;
-}
-.nicedash{
-    width: 50px;
-    height: 1px;
-    background-color: #5EEAD4;
 }
 .dev {
     font-size: 25px;
     margin: 0px 0px 0px 120px;
 }
- @media (max-width: 780px) {
-        .dev {
-        font-size: 0.5em;
-       
-    }
- }
 .description {
-    padding: 10px 0px;
+    padding-top:30px;
+    padding-bottom: 10px;
     color: rgba(255, 255, 255, 0.5);
-}
-@media (max-width: 780px) {
-    .description {
-    padding: 10px 0px;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.5em;
-}
 }
 .socials{
     display: flex;
@@ -167,23 +122,6 @@ header {
     transform: translateY(-4px);
     transition: 0.2s;
 }
-
-button {
-    background-color: black;
-    color: #f6f6f6;
-    border: 2px solid rgba(255, 255, 255, 30%);
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    
-}
-button:hover {
-    background-color: rgba(128, 128, 128, 20%);
-    transition: 0.2s;
-}
-
 /* New CSS for image section */
 .pic {
     display: flex;
@@ -269,4 +207,36 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+@media (max-width: 768px) {
+    .navlinks {
+        display: none;
+    }
+    .logo {
+        margin: 0 0 0 20px;
+    }
+    .name {
+        font-size: 2.0rem;
+    }
+    .professions {
+        font-size: 1.2rem;
+    }
+    .description {
+        padding-top:15px;
+    } 
+    .socials{
+        margin: 10px 0px;
+    }
+    .stuffs {
+        margin: 0 0 0 20px;
+    }
+    .navbar {
+    height: 18vh;
+}
+}
+
+@media (min-width: 768px) {
+    .hamMenu {
+        display: none;
+    }
 }
