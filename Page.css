@@ -15,6 +15,7 @@ body {
   font-family: Clash Display, sans-serif;
   margin: 0px;
   height: 500vh;
+  width: 100%;
 }
 * {
   margin: 0;
@@ -24,7 +25,6 @@ body {
 /* header section */
 header {
     height: 100vh;
-    width: 100%;
 }
 
 /* navigation bar section */
@@ -44,7 +44,7 @@ header {
     width: 40px;
     height: 40px;
     display: block;
-    margin-right: 20px;
+    margin-right: 5%;
 }
 .navlinks {
     display: flex;
@@ -54,7 +54,7 @@ header {
     height: 80px;
     /*animate border later*/
     border-bottom: 1px solid;
-    margin-right: 80px;
+    margin-right: 100px;
 }
 .navlinks a {
     text-decoration: none;
@@ -214,7 +214,7 @@ header {
         display: none;
     }
     .logo {
-        margin: 0 0 0 20px;
+        margin: 0 0 0 0%;
     }
     .name {
         font-size: 2.0rem;
@@ -229,11 +229,14 @@ header {
         margin: 10px 0px;
     }
     .stuffs {
-        margin: 0 0 0 20px;
+        margin: 0 0 0 0%;
+    }
+    header{
+        padding: 0 0 0 5%;
     }
     .navbar {
     height: 18vh;
-}
+} 
 }
 
 @media (min-width: 768px) {
