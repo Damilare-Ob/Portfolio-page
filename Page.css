@@ -236,11 +236,17 @@ header {
     }
     .navbar {
     height: 18vh;
-} 
+    } 
+    .hire2{
+        margin: 20px 0px;
+    }
 }
 
 @media (min-width: 768px) {
     .hamMenu {
+        display: none;
+    }
+    .hire2{
         display: none;
     }
 }
