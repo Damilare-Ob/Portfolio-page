@@ -55,7 +55,7 @@ header {
     width: 40px;
     height: 40px;
     display: block;
-    margin-right: 5%;
+    margin-right: 5vw;
 }
 .navlinks {
     display: flex;
@@ -170,16 +170,14 @@ header {
 .skills-container {
     background-color:black;
     height: 90vh;
-    padding: 10vh;
+    padding: 10vw;
 }
 .skillshead{
     text-align: center;
     font-size: 6em;
     margin-bottom: 30px;
 }
-.skillsubhead {
-    font-size: 2em;
-}
+
 .Res {
     text-align: center;
 }
@@ -204,20 +202,28 @@ header {
   rgb(32, 32, 32) 100%
 );
     width: 45%;
-    height: 250px;
+    height: 40vh;
     border-radius: 20px;
 
     /*animate border later*/
     border: 1px solid white;
-    margin: 20px 0px;
+    margin: 1vh 0px;
 }
 .React{
     font-size: 2rem;
     margin: 40px;
     font-weight: bold;
 }
+.Reactimgdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .Reactimg {
-    margin-right:20px;
+    margin-right: 1vw;
+    width: 10rem;
+    height: 10rem;
 }
 .otherskills {
     display: flex;
@@ -251,10 +257,21 @@ header {
         padding: 0 0 0 6vw;
     }
     .navbar {
-    height: 18vh;
+        height: 18vh;
     } 
     .hire2{
         margin: 20px 0px;
+    }
+    .skills-container {
+        padding: 1vw;
+    }
+    .scontainer {
+        width: 80%;
+        height: 25vh;
+        margin: 10px 0px;
+    }
+    .React{
+       font-size: 1.5rem;
     }
 }
 
@@ -264,5 +281,9 @@ header {
     }
     .hire2{
         display: none;
+    }
+    .Reactimg {
+       width: 15rem;
+       height: 15rem;
     }
 }
