@@ -169,8 +169,7 @@ header {
 }
 .skills-container {
     background-color:black;
-    height: 90vh;
-    padding: 10vw;
+    padding: 5vw;
 }
 .skillshead{
     text-align: center;
@@ -185,8 +184,11 @@ header {
     width: 100%;
     height: 800px;
 }
-.cssbr{
-    font-size:16px;
+.otherskills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .scontainer {
     display: inline-flex;
@@ -209,7 +211,7 @@ header {
     border: 1px solid white;
     margin: 1vh 0px;
 }
-.React{
+.React, .JavaScript, .Figma, .GitHub{
     font-size: 2rem;
     margin: 40px;
     font-weight: bold;
@@ -224,12 +226,6 @@ header {
     margin-right: 1vw;
     width: 10rem;
     height: 10rem;
-}
-.otherskills {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 @media (max-width: 932px) {
     .navlinks {
@@ -263,14 +259,14 @@ header {
         margin: 20px 0px;
     }
     .skills-container {
-        padding: 1vw;
+        padding: 1vh;
     }
     .scontainer {
         width: 80%;
         height: 25vh;
         margin: 10px 0px;
     }
-    .React{
+    .React, .JavaScript {
        font-size: 1.5rem;
     }
 }
