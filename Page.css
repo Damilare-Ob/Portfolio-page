@@ -42,7 +42,7 @@ header {
 .navbar {
     display: flex;
     align-items: center;
-    height: 120px;
+    height: 23vh;
     justify-content: space-between;
 }
 .logo {
@@ -62,7 +62,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    height: 80px;
+    height: 17vh;
     /*animate border later*/
     border-bottom: 1px solid;
     margin-right: 10%;
@@ -173,7 +173,7 @@ header {
 }
 .skillshead{
     text-align: center;
-    font-size: 6em;
+    font-size: 7em;
     margin-bottom: 30px;
 }
 
@@ -209,9 +209,18 @@ header {
 
     /*animate border later*/
     border: 1px solid white;
-    margin: 1vh 0px;
+    margin: 0px 0px;
 }
-.React, .JavaScript, .Figma, .GitHub{
+.scontainer:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.React, 
+.JavaScript, 
+.GitHub, 
+.Res, 
+.TypeScript, 
+.Nodejs {
     font-size: 2rem;
     margin: 40px;
     font-weight: bold;
@@ -228,6 +237,9 @@ header {
     height: 10rem;
 }
 @media (max-width: 932px) {
+    .navbar {
+        height: 120px;
+    }
     .navlinks {
         display: none;
     }
@@ -252,9 +264,6 @@ header {
     header{
         padding: 0 0 0 6vw;
     }
-    .navbar {
-        height: 18vh;
-    } 
     .hire2{
         margin: 20px 0px;
     }
