@@ -51,11 +51,26 @@ header {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
 }
+
 .hamMenu{
-    width: 40px;
-    height: 40px;
-    display: block;
-    margin-right: 5vw;
+    width: 60px;
+    height: 60px;
+    margin-right: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+}
+.hamMenu:hover {
+    background-color:rgba(255, 255, 255, 15%);
+}
+.hamline {
+    width: 30px;
+    height: 3px;
+    background-color: #f6f6f6;
+    margin: 3px;
+    border-radius: 100px;
 }
 .navlinks {
     display: flex;
@@ -169,14 +184,13 @@ header {
 }
 .skills-container {
     background-color:black;
-    padding: 5vw;
+    padding: 50px 5vw 5vw 5vw;
 }
 .skillshead{
     text-align: center;
     font-size: 7em;
     margin-bottom: 30px;
 }
-
 .Res {
     text-align: center;
 }
@@ -206,7 +220,6 @@ header {
     width: 45%;
     height: 40vh;
     border-radius: 20px;
-
     /*animate border later*/
     border: 1px solid white;
     margin: 0px 0px;
@@ -233,8 +246,8 @@ header {
 }
 .Reactimg {
     margin-right: 1vw;
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
 }
 @media (max-width: 932px) {
     .navbar {
@@ -268,14 +281,18 @@ header {
         margin: 20px 0px;
     }
     .skills-container {
-        padding: 1vh;
+        padding: 50px 1vw 1vw 1vw;
     }
     .scontainer {
         width: 80%;
         height: 25vh;
         margin: 10px 0px;
     }
-    .React, .JavaScript {
+    .React, 
+    .JavaScript, 
+    .TypeScript, 
+    .Nodejs,
+    .GitHub {
        font-size: 1.5rem;
     }
 }
