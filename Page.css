@@ -61,6 +61,8 @@ header {
     align-items: center;
     flex-direction: column;
     border-radius: 100px;
+    background-color: transparent;
+    border: none;
 }
 .hamMenu:hover {
     background-color:rgba(255, 255, 255, 15%);
@@ -207,16 +209,6 @@ header {
 .scontainer {
     display: inline-flex;
     justify-content: space-between;
-    
-   background: linear-gradient(
-  140deg,
-  rgb(32, 32, 32) 0%,
-  rgb(32, 32, 32) 10%,
-  rgb(0, 0, 0) 20%,
-  rgb(0, 0, 0) 80%,
-  rgb(32, 32, 32) 90%,
-  rgb(32, 32, 32) 100%
-);
     width: 45%;
     height: 40vh;
     border-radius: 20px;
