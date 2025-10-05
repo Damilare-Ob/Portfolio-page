@@ -231,7 +231,7 @@ header {
 /* midrange laptops */
 @media(min-width:1920px){
     html {
-      font-size: 30px;
+      font-size: 25px;
     } 
     .navbar {
       height: 170px;
@@ -249,7 +249,7 @@ header {
 /*medium large laptops*/
 @media(min-width:2560px){
     html{
-      font-size: 45px;
+      font-size: 35px;
     }
     .navbar {
       height: 240px;
