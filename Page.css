@@ -1,16 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-@media(min-width:1920px){
-    html{
-        font-size: 30px;
-    } 
-}
-@media(min-width:2560px){
-    html{
-        font-size: 45px;
-    }
-}
 body {
   color: #f6f6f6;
   background-color: black;
@@ -37,7 +27,7 @@ header {
 .navbar {
     display: flex;
     align-items: center;
-    height: 23vh;
+    height: 130px;
     justify-content: space-between;
 }
 .logo {
@@ -46,8 +36,7 @@ header {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
 }
-
-.hamMenu{
+.hamMenu {
     width: 60px;
     height: 60px;
     margin-right: 3vh;
@@ -64,7 +53,7 @@ header {
 }
 .hamline {
     width: 30px;
-    height: 3px;
+    height: 2px;
     background-color: #f6f6f6;
     margin: 3px;
     border-radius: 100px;
@@ -74,7 +63,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    height: 17vh;
+    height: 100px;
     /*animate border later*/
     border-bottom: 1px solid;
     margin-right: 10%;
@@ -87,10 +76,10 @@ header {
 .navlinks a:hover {
     color: #5EEAD4; /* cyan color */
 }
-.hire{
+.hire {
     background-color: black;
     color: white;
-    border: 0.0125rem solid rgba(255, 255, 255, 40%);
+    border: 1px solid rgba(255, 255, 255, 40%);
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
@@ -120,7 +109,7 @@ header {
     gap: 0px;
     font-size: 1.56rem;
 }
-.professions p{
+.professions p {
     margin: 0px;
 }
 .description {
@@ -128,17 +117,17 @@ header {
     padding-bottom: 10px;
     color: rgba(255, 255, 255, 0.5);
 }
-.nicedashdiv{ 
+.nicedashdiv { 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nicedash{
+.nicedash {
     width: 3vw;
     height: 1px;
     background-color: white;
 }
-.socials{
+.socials {
     display: flex;
     justify-content: space-between;
     width: 9.375rem;
@@ -183,7 +172,7 @@ header {
     background-color: black;
     padding: 50px 0vw 0vw 0vw;
 }
-.skillshead{
+.skillshead {
     text-align: center;
     font-size: 7em;
     margin-bottom: 30px;
@@ -238,6 +227,62 @@ header {
     width: 100%;
     height: 100%;
 }
+
+/* midrange laptops */
+@media(min-width:1920px){
+    html {
+      font-size: 30px;
+    } 
+    .navbar {
+      height: 170px;
+    }
+    .navlinks {
+      height: 150px;
+      border-bottom: 1.5px solid white;
+    }
+    .hire {
+      padding: 20px 40px;
+      border: 1.5px solid rgba(255, 255, 255, 40%);
+   }
+}
+
+/*medium large laptops*/
+@media(min-width:2560px){
+    html{
+      font-size: 45px;
+    }
+    .navbar {
+      height: 240px;
+    }
+    .navlinks {
+      height: 220px;
+      border-bottom: 2px solid white;
+    }
+    .hire {
+      padding: 20px 40px;
+      border: 2px solid rgba(255, 255, 255, 40%);
+   }
+}
+
+/* large laptops*/
+@media(min-width: 3840px){
+    html{
+      font-size: 45px;
+    }
+    .navbar {
+      height: 320px;
+    }
+    .navlinks {
+      height: 300px;
+      border-bottom: 4px solid white;
+    }
+    .hire {
+      padding: 30px 50px;
+      border: 4px solid rgba(255, 255, 255, 40%);
+   }
+}
+
+/*phone width*/
 @media (max-width: 932px) {
     .navbar {
         height: 120px;
