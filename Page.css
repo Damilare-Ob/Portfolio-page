@@ -21,9 +21,14 @@ body {
 /* header section */
 header {
     height: 100vh;
+    background-color: black;
 }
 
 /* navigation bar section */
+.scroll {
+    position: sticky;
+    top: 0;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -76,7 +81,7 @@ header {
 .navlinks a:hover {
     color: #5EEAD4; /* cyan color */
 }
-.hire {
+.Resume {
     background-color: black;
     color: white;
     border: 1px solid rgba(255, 255, 255, 40%);
@@ -155,18 +160,20 @@ header {
 
 /* about section */
 .about {
-    background-color:#f6f6f6;
-    color: rgb(11, 13, 16);
-    height: 90vh;
-    padding: 10vh;
-    border-top-left-radius:50px;
-    border-top-right-radius:50px;
+  background-color: #f6f6f6;
+  color: rgb(11, 13, 16);
+  height: 90vh;
+  padding: 10vh;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
 }
 
 
 /* Skills section */
 .Skills {
     background-color:black;
+    position: relative;
 }
 .skills-container {
     background-color: black;
