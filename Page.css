@@ -205,7 +205,7 @@ header {
     height: 45vh;
     border-radius: 20px;
     /*animate border later*/
-    border: 1px solid #5EEAD4;
+    border: 10px solid #5EEAD4;
     margin: 0px 0px;
     box-shadow: 0 0 17px rgba(94, 234, 212, 25%);
 
