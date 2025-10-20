@@ -1,9 +1,13 @@
+:root {
+    --whitecolor :#f6f6f6;
+    --blackcolor : black;
+    --craycolor: #5EEAD4;
+}
 html {
     scroll-behavior: smooth;
 }
-
 body {
-  color: #f6f6f6;
+  color: var(--whitecolor);
   background-color: black;
   font-family: Clash Display, sans-serif;
   margin: 0px;
@@ -15,14 +19,14 @@ body {
   padding: 0;
 }
 ::selection {
-  background:#f6f6f6; 
-  color: black;         
+  background: var(--whitecolor); 
+  color: var(--blackcolor);         
 }
 
 /* header section */
 header {
     height: 100vh;
-    background-color: black;
+    background-color: var(--blackcolor);
     margin-left: 6vw;
 }
 
@@ -39,7 +43,6 @@ header {
 }
 .logo {
     padding: 30px 0px;
-    
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
 }
@@ -61,7 +64,7 @@ header {
 .hamline {
     width: 30px;
     height: 2px;
-    background-color: #f6f6f6;
+    background-color: var(--whitecolor);
     margin: 3px;
     border-radius: 100px;
 }
@@ -77,15 +80,15 @@ header {
 }
 .navlinks a {
     text-decoration: none;
-    color: #f6f6f6;
+    color: var(--whitecolor);
     font-size: 1rem;
 }
 .navlinks a:hover {
-    color: #5EEAD4; /* cyan color */
+    color: var(--craycolor);/* cyan color */
 }
 .Resume {
-    background-color: black;
-    color: white;
+    background-color: var(--blackcolor);
+    color: var(--whitecolor);
     border: 1px solid rgba(255, 255, 255, 40%);
     padding: 10px 20px;
     border-radius: 5px;
@@ -103,7 +106,7 @@ header {
     margin-top: 12vh;
 }
 .neon-text {
-  color:#5EEAD4; /* cyan color */
+  color: var(--craycolor); /* cyan color */
   font-weight: bold;
 }
 .name {
@@ -131,7 +134,7 @@ header {
 .nicedash {
     width: 3vw;
     height: 1px;
-    background-color: white;
+    background-color: var(--whitecolor);
 }
 .socials {
     display: flex;
@@ -140,11 +143,11 @@ header {
     margin: 20px 0px;
 }
 .socials a {
-    color: #f6f6f6;
+    color: var(--whitecolor);
     font-size: 1.5rem;
 }
 .socials a:hover {
-    color: #5EEAD4;
+    color: var(--craycolor);
     transform: translateY(-4px);
     transition: 0.2s;
 }
@@ -161,7 +164,7 @@ header {
 
 /* about section */
 .about {
-  background-color: #f6f6f6;
+  background-color: var(--whitecolor);
   color: rgb(11, 13, 16);
   height: 90vh;
   padding: 10vh;
@@ -173,11 +176,11 @@ header {
 
 /* Skills section */
 .Skills {
-    background-color:black;
+    background-color:var(--blackcolor);
     position: relative;
 }
 .skills-container {
-    background-color: black;
+    background-color: var(--blackcolor);
     padding: 50px 0vw 0vw 0vw;
 }
 .skillshead {
@@ -205,7 +208,7 @@ header {
     height: 45vh;
     border-radius: 20px;
     /*animate border later*/
-    border: 10px solid #5EEAD4;
+    border: 1px solid var(--craycolor);
     margin: 0px 0px;
     box-shadow: 0 0 17px rgba(94, 234, 212, 25%);
 
@@ -246,7 +249,7 @@ header {
     }
     .navlinks {
       height: 150px;
-      border-bottom: 1.5px solid white;
+      border-bottom: 1.5px solid var(--whitecolor);
     }
     .hire {
       padding: 20px 40px;
@@ -264,7 +267,7 @@ header {
     }
     .navlinks {
       height: 220px;
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid var(--whitecolor);
     }
     .hire {
       padding: 20px 40px;
@@ -282,7 +285,7 @@ header {
     }
     .navlinks {
       height: 300px;
-      border-bottom: 4px solid white;
+      border-bottom: 4px solid var(--whitecolor);
     }
     .hire {
       padding: 30px 50px;
