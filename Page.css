@@ -76,7 +76,7 @@ header {
     height: 100px;
     /*animate border later*/
     border-bottom: 1px solid;
-    margin-right: 20vh;
+    margin-right: 10vw;
 }
 .navlinks a {
     text-decoration: none;
@@ -180,10 +180,10 @@ header {
     background-color: transparent;
     border: none;
 }
-.hamMenu:hover {
+.hamMenu2:hover {
     background-color:rgba(255, 255, 255, 15%);
 }
-.hamline {
+.hamline2 {
     width: 30px;
     height: 2px;
     background-color: var(--blackcolor);
@@ -198,7 +198,7 @@ header {
     height: 100px;
     /*animate border later*/
     border-bottom: 2px solid;
-    margin-right: 15vh;
+    margin-right: 10vw;
     color: black;
 }
 .navlinks2 a {
@@ -227,7 +227,7 @@ header {
   background-color: var(--whitecolor);
   color: rgb(11, 13, 16);
   height: 90vh;
-  padding: 5vh 6vw;
+  padding: 5vh 0vw 5vh 6vw;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   position: relative;
@@ -358,7 +358,7 @@ header {
     .navbar {
         height: 120px;
     }
-    .navlinks {
+    .navlinks, .navlinks2 {
         display: none;
     }
     .name {
@@ -377,7 +377,7 @@ header {
         margin: 0 0 0 0;
     }
     header{
-        padding: 0 0 0 6vw;
+        padding: 0 0 0 2vw;
     }
     .Resume2{
         margin: 20px 0px;
@@ -396,6 +396,9 @@ header {
     .Nodejs,
     .GitHub {
        font-size: 1.5rem;
+    }
+    .about {
+        padding: 5vh 0vw 5vh 8vw; 
     }
 }
 
