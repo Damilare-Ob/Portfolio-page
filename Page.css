@@ -1,5 +1,5 @@
 :root {
-    --whitecolor :red;
+    --whitecolor :#f6f6f6;
     --blackcolor : black;
     --craycolor: #5EEAD4;
 }
@@ -15,7 +15,7 @@ body {
   width: 100%;
 }
 * {
-  margin: 1;
+  margin: 0;
   padding: 0;
 }
 ::selection {
