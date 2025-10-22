@@ -227,7 +227,7 @@ header {
   background-color: var(--whitecolor);
   color: rgb(11, 13, 16);
   height: 90vh;
-  padding: 5vh;
+  padding: 5vh 6vw;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   position: relative;
