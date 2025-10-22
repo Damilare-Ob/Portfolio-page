@@ -72,11 +72,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 50vw;
     height: 100px;
     /*animate border later*/
     border-bottom: 1px solid;
-    margin-right: 10%;
+    margin-right: 20vh;
 }
 .navlinks a {
     text-decoration: none;
@@ -94,7 +94,7 @@ header {
     border-radius: 5px;
     font-size: 1rem;
 }
-.hire:hover {
+.Resume:hover {
     background-color:rgba(255, 255, 255, 15%);
     transition: 0.5s;
 }
@@ -163,11 +163,71 @@ header {
 
 
 /* about section */
+.navbar2div {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.hamMenu2 {
+    width: 60px;
+    height: 60px;
+    margin-right: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    background-color: transparent;
+    border: none;
+}
+.hamMenu:hover {
+    background-color:rgba(255, 255, 255, 15%);
+}
+.hamline {
+    width: 30px;
+    height: 2px;
+    background-color: var(--blackcolor);
+    margin: 3px;
+    border-radius: 100px;
+}
+.navlinks2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    height: 100px;
+    /*animate border later*/
+    border-bottom: 2px solid;
+    margin-right: 15vh;
+    color: black;
+}
+.navlinks2 a {
+    text-decoration: none;
+    color: var(--blackcolor);
+    font-size: 1rem;
+}
+.navlinks2 a:hover {
+    color: var(--craycolor);/* cyan color */
+}
+.Resume_a {
+    background-color: var(--blackcolor);
+    color: var(--whitecolor);
+    border: 1px solid rgba(0, 0, 0, 40%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.Resume:hover {
+    background-color:rgba(255, 255, 255, 15%);
+    transition: 0.5s;
+}
+
+
 .about {
   background-color: var(--whitecolor);
   color: rgb(11, 13, 16);
   height: 90vh;
-  padding: 10vh;
+  padding: 5vh 6vw;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   position: relative;
@@ -340,7 +400,7 @@ header {
 }
 
 @media (min-width: 933px) {
-    .hamMenu {
+    .hamMenu, .hamMenu2 {
         display: none;
     }
     .Resume2{
