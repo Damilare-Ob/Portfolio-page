@@ -212,14 +212,15 @@ header {
 .Resume_a {
     background-color: var(--blackcolor);
     color: var(--whitecolor);
-    border: 1px solid rgba(0, 0, 0, 40%);
+    border: 1px solid var(--blackcolor);
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
 }
 .Resume_a:hover {
-    background-color:rgba(255, 255, 255, 15%);
+    background-color:rgba(0, 0, 0, 30%);
     transition: 0.5s;
+    color: var(--blackcolor);
 }
 
 
