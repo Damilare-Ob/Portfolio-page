@@ -25,9 +25,9 @@ body {
 
 /* header section */
 header {
-    height: 100vh;
     background-color: var(--blackcolor);
     margin-left: 6vw;
+    height: 100vh;
 }
 
 /* navigation bar section */
@@ -99,30 +99,34 @@ header {
     transition: 0.5s;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+}
 /* div hero section */
 .hero {
     display: flex;
     height: 65vh;
-    margin-top: 12vh;
+    margin-top: 15vh;
+}
+.intro {
+    width: 70%;
 }
 .neon-text {
   color: var(--craycolor); /* cyan color */
   font-weight: bold;
+  font-family: 'IBM Plex Serif', serif;
+  font-style: italic;
+  font-size: 22px;
 }
 .name {
     font-size: 3.5rem;
-}
-.professions {
-    display: flex;
-    margin-top: 0px;
-    gap: 0px;
-    font-size: 1.56rem;
 }
 .professions p {
     margin: 0px;
 }
 .description {
-    padding-top:30px;
+    padding-top:10px;
     padding-bottom: 10px;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -152,13 +156,6 @@ header {
     transition: 0.2s;
 }
 /* New CSS for image section */
-.pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 77vh;
-}
 
 
 
@@ -166,8 +163,15 @@ header {
 .navbar2div {
     display: flex;
     width: 100%;
+    height: 50vh;
     justify-content: flex-end;
+    margin-top: 10vh;
+    position: sticky;
+    z-index: 10;
+    top: 10vh;
+    
 }
+
 .hamMenu2 {
     width: 60px;
     height: 60px;
@@ -193,13 +197,11 @@ header {
 .navlinks2 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 50vw;
-    height: 100px;
-    /*animate border later*/
-    border-bottom: 2px solid;
-    margin-right: 10vw;
+    flex-direction: column;
+    width: 15vw;
+    height: 50vh;
     color: black;
+
 }
 .navlinks2 a {
     text-decoration: none;
@@ -218,9 +220,9 @@ header {
     font-size: 1rem;
 }
 .Resume_a:hover {
-    background-color:rgba(0, 0, 0, 30%);
+    background-color:#333333;
     transition: 0.5s;
-    color: var(--blackcolor);
+    
 }
 
 
