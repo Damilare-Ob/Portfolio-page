@@ -26,7 +26,7 @@ body {
 /* header section */
 header {
     background-color: var(--blackcolor);
-    margin-left: 6vw;
+    margin-left: 15vw;
     height: 100vh;
 }
 
@@ -99,10 +99,7 @@ header {
     transition: 0.5s;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-}
+
 /* div hero section */
 .hero {
     display: flex;
@@ -115,9 +112,7 @@ header {
 .neon-text {
   color: var(--craycolor); /* cyan color */
   font-weight: bold;
-  font-family: 'IBM Plex Serif', serif;
-  font-style: italic;
-  font-size: 22px;
+  font-size: 18px;
 }
 .name {
     font-size: 3.5rem;
